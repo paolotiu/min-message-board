@@ -5,7 +5,7 @@
     "scripts": {
         "start": "node ./bin/www",
         "devstart": "nodemon ./bin/www",
-        "serverstart": "SET DEBUG=express-locallibrary-tutorial:* & npm run devstart"
+        "serverstart": "SET DEBUG=mini-message-board:* & npm run devstart"
     },
     "dependencies": {
         "cookie-parser": "~1.4.4",
@@ -13,10 +13,15 @@
         "express": "~4.16.1",
         "hbs": "~4.0.4",
         "http-errors": "~1.6.3",
+        "javascript-time-ago": "^2.3.3",
         "morgan": "~1.9.1",
         "node-sass-middleware": "0.11.0"
     },
     "devDependencies": {
-        "nodemon": "^2.0.6"
+        "nodemon": "^2.0.6",
+        "reload": "^3.1.1"
+    },
+    "engines": {
+        "node": "12.18.3"
     }
 }
